@@ -8,8 +8,42 @@ body {
   height: 100%;
   background-color: #F3F1FF;
   font-family: 'Poppins', sans-serif;
-
 }
+  .header{  
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 94px;
+    background-color: #562EFF;
+  }
+
+  .logo {
+    display: flex;
+    gap: 10px;
+    margin-left: 10vw;
+    align-items: center;
+  }
+
+  .logo img {
+    width: 40px;
+  }
+  .header-title {
+    font-size: 25px;
+    color: white;
+  }
+  .nav-info a {
+    font-size: 17px;
+    text-decoration: none;
+    color: white;
+  }
+  .nav-info {
+    margin-left: 26vw;
+    display: flex;
+    gap: 29px;
+    margin-right: 10vw;
+    align-items: center;  
+  }
+
   main {
     display: flex;
     align-items: center;
@@ -137,6 +171,12 @@ body {
 
 /* Media Queries */
   @media screen and (max-width:688px) {
+  .header {
+    justify-content: flex-start;
+  }
+    .nav-info {
+      display: none;
+    }
     .container {
       width: 100%;
     }
